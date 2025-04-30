@@ -1,0 +1,72 @@
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body.no-scroll {
+  overflow: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 480px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .container {
+    min-width: 480px;
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .freeze-container {
+    min-width: 768px;
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .container {
+    min-width: 768px;
+    max-width: 1200px;
+  }
+}
+@media screen and (min-width: 1070px) {
+  .freeze-container {
+    min-width: 1070px;
+    max-width: 1070px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    min-width: 1200px;
+    max-width: 1200px;
+  }
+  .freeze-container {
+    min-width: 1200px;
+    max-width: 1200px;
+  }
+}
+
+body {
+  color: $titleColor;
+  background-color: $backgroundColor;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+use {
+  cursor: pointer;
+}

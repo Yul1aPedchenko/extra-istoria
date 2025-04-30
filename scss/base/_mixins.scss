@@ -1,0 +1,25 @@
+@mixin title() {
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  // margin-bottom: 40px;
+  text-align: center;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    & {
+      font-size: 32px;
+      // margin-bottom: 50px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    & {
+      font-size: 32px;
+      // margin-bottom: 50px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & {
+      font-size: 40px;
+      // margin-bottom: 70px;
+    }
+  }
+}

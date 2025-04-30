@@ -1,0 +1,279 @@
+.hero {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  background-image: $gradientOverlayBlack, url("../images/bg-mobile-sm@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  &-mobile__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-mobile__link {
+    display: flex;
+    order: 1;
+  }
+  &-mobile__full-logo {
+    height: 60px;
+  }
+  &__main-wrap {
+    margin-top: 20px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+  &__title span {
+    color: $accentColor;
+  }
+  &__text {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+  &__text span {
+    font-weight: 700;
+    color: $accentColor;
+  }
+  &__btn {
+    padding-left: 30px;
+    padding-right: 35px;
+    padding-top: 13px;
+    padding-bottom: 12px;
+    background-color: $accentColor;
+    border: 1px solid $accentColor;
+    color: black;
+    border-radius: 30px;
+    display: flex;
+    transition: all 0.3s ease-in-out;
+    font-weight: 600;
+    align-items: center;
+    margin: 0 auto;
+  }
+  &__btn:hover {
+    background-color: transparent;
+    color: $titleColor;
+    box-shadow: 0 0 15px #39ff14;
+    .hero__phone-icon {
+      stroke: $accentColor;
+    }
+  }
+  &__phone-icon {
+    width: 24px;
+    height: 24px;
+    animation: blink 1s infinite;
+    fill: none;
+    stroke: $backgroundColor;
+    margin-right: 5px;
+  }
+}
+@supports (
+  background-image: $gradientOverlayBlack,
+  url("../images/bg-mobile-sm@1x.webp")
+) {
+  .hero {
+    background-image: $gradientOverlayBlack,
+      url("../images/bg-mobile-sm@1x.webp");
+    background-size: cover;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: $gradientOverlayBlack,
+      url("../images/bg-mobile-sm@2x.png");
+    background-size: cover;
+  }
+  @supports (
+    background-image: $gradientOverlayBlack,
+    url("../images/bg-mobile-sm@2x.webp")
+  ) {
+    .hero {
+      background-image: $gradientOverlayBlack,
+        url("../images/bg-mobile-sm@2x.webp");
+      background-size: cover;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .hero {
+    padding-bottom: 80px;
+    margin-bottom: 50px;
+    background-image: $gradientOverlayBlack,
+      url("../images/bg-mobile-large@1x.png");
+      &-mobile__full-logo {
+        height: 75px;
+      }
+    &__title {
+      font-size: 40px;
+      margin-bottom: 30px;
+      width: 420px;
+    }
+    &__text {
+      font-size: 20px;
+      margin-bottom: 60px;
+    }
+    &__btn {
+      margin: 0;
+    }
+  }
+  @supports (
+    background-image: $gradientOverlayBlack,
+    url("../images/bg-mobile-large@1x.webp")
+  ) {
+    .hero {
+      background-image: $gradientOverlayBlack,
+        url("../images/bg-mobile-large@1x.webp");
+    }
+  }
+  @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: $gradientOverlayBlack,
+        url("../images/bg-mobile-large@2x.png");
+    }
+    @supports (
+      background-image: $gradientOverlayBlack,
+      url("../images/bg-mobile-large@2x.webp")
+    ) {
+      .hero {
+        background-image: $gradientOverlayBlack,
+          url("../images/bg-mobile-large@2x.webp");
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .hero {
+    padding-top: 80px;
+    padding-bottom: 90px;
+    margin-bottom: 80px;
+    background-image: $gradientOverlayBlack, url("../images/bg-tablet@1x.png");
+    &-mobile__wrap {
+      display: none;
+    }
+    &__main-wrap {
+      position: relative;
+    }
+    &__title {
+      font-size: 60px;
+      margin-bottom: 25px;
+      width: 526px;
+    }
+    &__text {
+      font-size: 24px;
+      width: 700px;
+    }
+    &__btn {
+      margin: 0;
+    }
+  }
+  @supports (
+    background-image: $gradientOverlayBlack,
+    url("../images/bg-tablet@1x.webp")
+  ) {
+    .hero {
+      background-image: $gradientOverlayBlack,
+        url("../images/bg-tablet@1x.webp");
+    }
+  }
+  @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: $gradientOverlayBlack, url("../images/bg-tablet@2x.png");
+    }
+    @supports (
+      background-image: $gradientOverlayBlack,
+      url("../images/bg-tablet@2x.webp")
+    ) {
+      .hero {
+        background-image: $gradientOverlayBlack,
+          url("../images/bg-tablet@2x.webp");
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 80px;
+    padding-bottom: 90px;
+    margin-bottom: 100px;
+    background-image: $gradientOverlayBlack, url("../images/bg-desktop@1x.png");
+    &-mobile__wrap {
+      display: none;
+    }
+    &__main-wrap {
+      display: flex;
+      position: relative;
+    }
+    &__title {
+      font-size: 60px;
+      margin-bottom: 25px;
+      width: 526px;
+    }
+    &__text {
+      font-size: 24px;
+      width: 700px;
+    }
+    &__btn {
+      margin: 0;
+    }
+  }
+  @supports (
+    background-image: $gradientOverlayBlack,
+    url("../images/bg-desktop@1x.webp")
+  ) {
+    .hero {
+      background-image: $gradientOverlayBlack,
+        url("../images/bg-desktop@1x.webp");
+    }
+  }
+  @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: $gradientOverlayBlack,
+        url("../images/bg-desktop@2x.png");
+    }
+    @supports (
+      background-image: $gradientOverlayBlack,
+      url("../images/bg-desktop@2x.webp")
+    ) {
+      .hero {
+        background-image: $gradientOverlayBlack,
+          url("../images/bg-desktop@2x.webp");
+      }
+    }
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}

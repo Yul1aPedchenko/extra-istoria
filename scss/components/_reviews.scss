@@ -1,0 +1,111 @@
+.reviews {
+  margin-bottom: 60px;
+  &__wrap {
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 0 2px rgba(57, 255, 20, 0.6);
+    background-color: $backgroundColor;
+    padding: 15px;
+  }
+  &__title {
+    @include title();
+    margin-bottom: 20px;
+    color: $accentColor;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  &__text {
+    color: $textColor;
+    font-size: 12px;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  &__link {
+    color: $accentColor;
+    font-size: 13px;
+    font-weight: 600px;
+    transition: all 250ms ease-in-out;
+    justify-content: center;
+  }
+  &__link:hover {
+    opacity: 0.6;
+  }
+  &__btn-link {
+    color: $accentColor;
+    font-size: 14px;
+    animation: blink 1s infinite;
+    justify-content: center;
+    display: flex;
+  }
+}
+@media screen and (min-width: 480px) {
+  .reviews {
+    &__wrap {
+      padding: 30px;
+    }
+    &__title {
+      font-size: 18px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+    &__link {
+      font-size: 17px;
+    }
+    &__btn-link {
+      font-size: 18px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .reviews {
+    &__wrap {
+      max-width: 738px;
+      margin: 0 auto;
+    }
+  }
+}
+@media screen and (min-width: 1100px) {
+  .reviews {
+    &__wrap {
+      padding: 30px 40px;
+      max-width: 950px;
+    }
+    &__title {
+      font-size: 20px;
+    }
+    &__text {
+        font-size: 20px;
+    }
+    &__link {
+        font-size: 21px;
+    }
+    &__btn-link {
+        font-size: 22px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .reviews {
+    &__text {
+        font-size: 24px;
+    }
+    &__link {
+        font-size: 25px;
+    }
+    &__btn-link {
+        font-size: 26px;
+    }
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
