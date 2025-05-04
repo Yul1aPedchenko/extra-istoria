@@ -7,12 +7,23 @@
     background-color: $backgroundColor;
     padding: 15px;
   }
+  &__subwrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
   &__title {
     @include title();
-    margin-bottom: 20px;
     color: $accentColor;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 15px;
+    text-align: left;
+    max-width: 200px;
+  }
+  &__full-logo {
+    height: 40px;
+    max-width: 150px;
   }
   &__text {
     color: $textColor;
@@ -44,7 +55,11 @@
       padding: 30px;
     }
     &__title {
-      font-size: 18px;
+      font-size: 24px;
+    }
+    &__full-logo {
+      height: 60px;
+      max-width: 200px;
     }
     &__text {
       font-size: 16px;
@@ -63,6 +78,14 @@
       max-width: 738px;
       margin: 0 auto;
     }
+    &__title {
+      font-size: 30px;
+      max-width: 300px;
+    }
+    &__full-logo {
+      height: 70px;
+      max-width: 400px;
+    }
   }
 }
 @media screen and (min-width: 1100px) {
@@ -72,29 +95,36 @@
       max-width: 950px;
     }
     &__title {
-      font-size: 20px;
+      font-size: 36px;
+      max-width: none;
+    }
+    &__full-logo {
+      height: 80px;
     }
     &__text {
-        font-size: 20px;
+      font-size: 20px;
     }
     &__link {
-        font-size: 21px;
+      font-size: 21px;
     }
     &__btn-link {
-        font-size: 22px;
+      font-size: 22px;
     }
   }
 }
 @media screen and (min-width: 1200px) {
   .reviews {
+    &__full-logo {
+      height: 85px;
+    }
     &__text {
-        font-size: 24px;
+      font-size: 24px;
     }
     &__link {
-        font-size: 25px;
+      font-size: 25px;
     }
     &__btn-link {
-        font-size: 26px;
+      font-size: 26px;
     }
   }
 }
