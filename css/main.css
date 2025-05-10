@@ -129,8 +129,40 @@ use {
 
 .splash svg {
   max-width: 200px;
+  opacity: 0;
+  -webkit-transition: all ease-in-out;
+  transition: all ease-in-out;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-animation: fadeInLogo 1s ease-in forwards;
+          animation: fadeInLogo 1s ease-in forwards;
 }
 
+@-webkit-keyframes fadeInLogo {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes fadeInLogo {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
 @media screen and (min-width: 480px) {
   .splash svg {
     max-width: 300px;
