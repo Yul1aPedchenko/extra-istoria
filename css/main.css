@@ -134,8 +134,8 @@ use {
   transition: all ease-in-out;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
-  -webkit-animation: fadeInLogo 1s ease-in forwards;
-          animation: fadeInLogo 1s ease-in forwards;
+  -webkit-animation: fadeInLogo 2s ease-in-out forwards;
+          animation: fadeInLogo 2s ease-in-out forwards;
 }
 
 @-webkit-keyframes fadeInLogo {

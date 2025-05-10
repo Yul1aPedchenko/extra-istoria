@@ -23,7 +23,7 @@
   opacity: 0;
   transition: all ease-in-out;
   transform: scale(0.9);
-  animation: fadeInLogo 1s ease-in forwards;
+  animation: fadeInLogo 2s ease-in-out forwards;
 }
 
 @keyframes fadeInLogo {

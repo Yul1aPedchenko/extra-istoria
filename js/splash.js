@@ -5,5 +5,5 @@ window.onload = function () {
     setTimeout(() => {
       splashScreen.style.display = "none";
     }, 1000); 
-  }, 1000); 
+  }, 2000); 
 };
