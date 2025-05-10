@@ -90,7 +90,7 @@ img {
 }
 body {
   color: #fff;
-  background-color: #2b2a29;
+  background-color: #141414;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -290,7 +290,7 @@ use {
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
-  background-color: #2b2a29;
+  background-color: #141414;
 }
 
 .menu-container.is-open {
@@ -491,7 +491,7 @@ use {
   -webkit-animation: blink 1s infinite;
           animation: blink 1s infinite;
   fill: none;
-  stroke: #2b2a29;
+  stroke: #141414;
   margin-right: 5px;
 }
 
@@ -1186,7 +1186,7 @@ use {
           backdrop-filter: blur(20px);
   -webkit-box-shadow: 0 0 0 2px rgba(57, 255, 20, 0.6);
           box-shadow: 0 0 0 2px rgba(57, 255, 20, 0.6);
-  background-color: #2b2a29;
+  background-color: #141414;
   padding: 15px;
 }
 .reviews__subwrap {
@@ -1556,7 +1556,7 @@ use {
 
 .modal {
   position: relative;
-  background-color: #2b2a29;
+  background-color: #141414;
   padding: 20px;
   border-radius: 8px;
   max-width: 500px;
